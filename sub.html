@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 seoyoung Portfolio</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .sub {
+            width: 100%;
+            position: relative;
+        }
+
+        .sub img {
+            width: 100%;
+            display: block;
+        }
+
+        /* 캐릭터 공통 */
+        .char{
+            position: absolute;
+            z-index: 10;
+        }
+
+        .squirrel{
+            width: 430px;
+            right: 40px;
+            bottom: 100px;
+        }
+
+        .shapes5{
+            width: 400px;
+            left: 1450px;
+            bottom: -1500px;
+        }
+
+        .bean{
+            width: 500px;
+            right: 490px;
+            bottom: -3280px;
+        }
+
+        .tulip{
+            width: 400px;
+            right: 420px;
+            bottom: -4100px;
+        }
+
+        @keyframes float {
+            0%   { transform: translateY(0); }
+            50%  { transform: translateY(-20px); }
+            100% { transform: translateY(0); }
+        }
+
+        .squirrel,
+        .shapes5 {
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes balloonFloat {
+            0%   { transform: translateY(0); }
+            50%  { transform: translateY(-20px); }
+            100% { transform: translateY(0); }
+        }
+
+        .bean,
+        .tulip {
+            animation: balloonFloat 5s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body>
+        <section id="s1" class="sub sec1"><img src="sub/introduction1.png"></section>
+        <section id="s2" class="sub sec2"><img src="sub/introduction2.jpg"></section>
+        <section id="s3" class="sub sec3"><img src="sub/introduction3.png"></section>
+        <section id="s4" class="sub sec4"><img src="sub/introduction4.jpg"></section>
+        <section id="s5" class="sub sec5"><img src="sub/introduction5.png"></section>
+        <section id="s6" class="sub sec6"><img src="sub/introduction6.png"></section>
+        <section id="s7" class="sub sec7"><img src="sub/introduction7.jpg"></section>
+        <section id="s8" class="sub sec8"><img src="sub/introduction8.jpg"></section>
+
+        <img src="images/squirrel.png" class="char squirrel">
+        <img src="images/shapes5.png" class="char shapes5">
+        <img src="images/bean.png" class="char bean">
+        <img src="images/tulip.png" class="char tulip">
+</body>
+</html>
