@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        @font-face {
+            font-family: 'Noto Sans CJK KR';
+            src: url('../개인사이트/noto/NotoSansCJKkr-Regular.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+            * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans CJK KR', sans-serif;
+        }
+
+        .work {
+            width: 100%;
+            height: 100%;
+        }
+
+        .work img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+    /* 버튼 위치 기준 */
+        .work {
+            position: relative;
+            text-align: center;
+        }
+
+        .btn-web{
+            position: absolute;
+            bottom: 60px;
+            width: 269px;   /* 버튼 이미지 가로 */
+            height: 72px;   /* 버튼 이미지 세로 */
+            z-index: 10;
+        }
+
+        .btn-web img{
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: 0.3s;
+        }
+
+        /* hover 효과 (선택) */
+        .btn-web:hover img{
+            transform: scale(1.05);
+        }
+
+                /* 첫 번째 버튼 위치 */
+        /* 첫 번째 섹션 버튼 기준 */
+        .w1{
+            position: relative;
+        }
+
+        /* 버튼 위치 */
+        .w1 .btn-web:nth-child(2) { left: 115px; }  /* 왼쪽 버튼 */
+        .w1 .btn-web:nth-child(3) { left: 450px; }  /* 오른쪽 버튼, 겹치지 않음 */
+        .w2 .btn-web:nth-child(2) { left: 115px; }  /* 왼쪽 버튼 */
+        .w2 .btn-web:nth-child(3) { left: 450px; }
+        .w3 .btn-web:nth-child(2) { left: 115px; }
+        .w4 .btn-web:nth-child(2) { left: 115px; }
+        .w5 .btn-web:nth-child(2) { left: 115px; }
+        .w6 .btn-web:nth-child(2) { left: 115px; }
+        .w7 .btn-web:nth-child(2) { left: 115px; }
+
+    /* 캐릭터 공통 */
+        .char{
+            position: absolute;
+            z-index: 10;
+        }
+
+        .elephant{
+            width: 480px;
+            left: 420px;
+            top: 100px;
+        }
+        
+        .rabbit{
+            width: 480px;
+            left: 390px;
+            top: 970px;
+        }
+
+        .bean{
+            width: 480px;
+            left: 380px;
+            top: 1850px;
+        }
+        
+        .tiger{
+            width: 490px;
+            left: 380px;
+            bottom: -2170px;
+        }
+
+        .squirrel{
+            width: 480px;
+            left: 350px; 
+            bottom: -3000px;
+        }
+
+        .cat{
+            width: 490px;
+            left: 350px;
+            bottom: -3950px;
+        }
+
+        .shapes5{
+            width: 400px;
+            left: 430px;
+            bottom: -4850px;
+        }
+
+        
+        .footer{
+            height: 403px;
+            background-color: #FF6E41;
+            color: #fff;
+            text-align: center;
+            padding: 24px;
+            font-size: 40px;
+        }
+
+        @keyframes float {
+            0%   { transform: translateY(0); }
+            50%  { transform: translateY(-20px); }
+            100% { transform: translateY(0); }
+        }
+
+        .elephant,
+        .rabbit,
+        .bean,
+        .tiger{
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes balloonFloat {
+            0%   { transform: translateY(0); }
+            50%  { transform: translateY(-20px); }
+            100% { transform: translateY(0); }
+        }
+
+        .squirrel,
+        .cat,
+        .shapes5{
+            animation: balloonFloat 5s ease-in-out infinite;
+        }
+    </style>
+    </head>
+
+    <body>
+        <section class="work w1"><img src="sub/Portfolio1.png" alt="portfolio 1">
+
+        <a href="Landing1.html" class="btn-web" target="_blank">
+            <img src="sub/button1.png" alt="Landing Page →"></a>
+        <a href="https://leesy050711-ux.github.io/wcbsite/index.html" class="btn-web color1" target="_blank"><img src="sub/button2.png" alt="Web site →"></a>
+        
+        </section>
+
+        <section class="work w2"><img src="sub/Portfolio2.png">
+        
+        <a href="Landing2.html" class="btn-web" target="_blank">
+            <img src="sub/button3.png" alt="Landing Page →"></a>
+        <a href="https://www.figma.com/proto/smnofPWK49Oazh7WwUQ2D7/Untitled?page-id=0%3A1&node-id=1-133&viewport=1009%2C-660%2C0.37&t=edt7oDdzZntHcB8v-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A83" class="btn-web color2" target="_blank"><img src="sub/button4.png" alt="prototype →"></a>
+        
+        </section>
+
+        
+
+        <section class="work w3"><img src="sub/Portfolio3.png">
+        
+        <a href="sub/Event.jpg" class="btn-web" target="_blank"><img src="sub/button5.png" alt="Event Design →">
+        </a>
+        
+        </section>
+
+        <section class="work w4"><img src="sub/Portfolio4.png">
+        
+        <a href="sub/Landing3.jpg" class="btn-web" target="_blank"><img src="sub/button1.png" alt="Landing Page →">
+        </a>
+    
+        </section>
+
+        <section class="work w5"><img src="sub/Portfolio5.png">
+        
+        <a href="sub/Landing4.jpg" class="btn-web" target="_blank"><img src="sub/button3.png" alt="Landing Page →">
+        </a>
+    
+        </section>
+
+        <section class="work w6"><img src="sub/Portfolio6.png">
+        
+        <a href="sub/Landing5.jpg" class="btn-web" target="_blank"><img src="sub/button1.png" alt="Landing Page →">
+        </a>
+    
+        </section>
+
+        <section class="work w7"><img src="sub/Portfolio7.png">
+        
+        <a href="sub/Landing6.jpg" class="btn-web" target="_blank"><img src="sub/button1.png" alt="Landing Page →">
+        </a>
+    
+        </section>
+
+        </div>
+
+        <img src="images/elephant.png" class="char elephant">
+        <img src="images/rabbit.png" class="char rabbit">
+        <img src="images/bean.png" class="char bean">
+        <img src="images/tiger.png" class="char tiger">
+        <img src="images/squirrel.png" class="char squirrel">
+        <img src="images/cat.png" class="char cat">
+        <img src="images/shapes5.png" class="char shapes5">
+
+    </body>
+    </html>

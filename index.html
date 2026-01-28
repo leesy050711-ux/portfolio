@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 seoyoung Portfolio</title>
+    <style>
+        @font-face {
+            font-family: 'KOTRAHOPE';
+            src: url('<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/KOTRAHOPE.woff2">');
+            font-weight: normal;
+            font-style: normal;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: #1238A7;
+            font-family: 'KOTRAHOPE', sans-serif;
+        }
+
+        header{
+            width: 100%;
+            position: relative;
+        }
+        header img{
+            width: 100%;
+            display: block;
+        }
+        /* 배경 이미지 */
+        .bg{
+            width: 100%;
+            display: block;
+        }
+        section{
+            position: relative;
+            overflow: hidden;
+        }
+        section img{
+            width: 100%;
+            display: block;
+        }
+
+        .section {
+            position: relative;   /* ⭐ 버튼 기준 */
+        }
+
+        .btn {
+            position: absolute;   /* ⭐ 핵심 */
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 20;
+        }
+
+        .btn img{
+            width: 470px; /* 크기 바꾸고 싶으면 수정 */
+            display: block;
+        }
+
+        .btn-white {
+            bottom: 110px;
+        }
+
+        .btn-pink {
+            bottom: 100px;
+        }
+
+        footer{
+            width: 100%;
+            position: relative;
+        }
+        footer img{
+            width: 100%;
+            display: block;
+        }
+
+        /* 캐릭터 공통 */
+        .char{
+            position: absolute;
+            z-index: 10;
+        }
+
+        .rabbit{
+            width: 430px;
+            left: 240px;
+            top: 180px;
+        }
+
+        .cat{
+            width: 400px;
+            right: 290px;
+            top: 100px;
+        }
+
+        .squirrel{
+            width: 420px;
+            right: 350px;
+            bottom: 50px;
+        }
+
+        .shapes1{
+            width: 400px;
+            right: 570px;
+            top: 15px;
+        }
+
+        .flower{
+            width: 420px;
+            left: 430px;
+            bottom: 5px;
+        }
+            /* 섹션 */
+        .rabbitbear{
+            width: 420px;
+            left: 170px;
+            bottom: 300px;
+        }
+
+        .elephant{
+            width: 400px;
+            right: 180px;
+            bottom: 320px;
+        }
+
+        .shapes5{
+            width: 400px;
+            right: 180px;
+            bottom: 100px;
+        }
+        
+        .footer{
+            height: 403px;
+            background-color: #FF6E41;
+            color: #fff;
+            text-align: center;
+            padding: 24px;
+            font-size: 40px;
+        }
+
+        @keyframes float {
+            0%   { transform: translateY(0); }
+            50%  { transform: translateY(-20px); }
+            100% { transform: translateY(0); }
+        }
+
+        .rabbit,
+        .squirrel,
+        .shapes1,
+        .rabbitbear{
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes balloonFloat {
+            0%   { transform: translateY(0); }
+            50%  { transform: translateY(-20px); }
+            100% { transform: translateY(0); }
+        }
+
+        .cat,
+        .flower,
+        .elephant, 
+        .shapes5{
+            animation: balloonFloat 5s ease-in-out infinite;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="main">
+        <img src="images/main1.png" class="bg">
+
+        <img src="images/rabbit.png" class="char rabbit">
+        <img src="images/cat.png" class="char cat">
+        <img src="images/squirrel.png" class="char squirrel">
+        <img src="images/shapes1.png" class="char shapes1">
+        <img src="images/flower.png" class="char flower">
+    </header>
+
+    <section class="section about">
+        <img src="images/main2.png" class="bg">
+
+        <img src="images/rabbitbear.png" class="char rabbitbear">
+        <img src="images/elephant.png" class="char elephant">
+
+        <a href="sub.html" class="btn btn-white" target="_blank">
+            <img src="images/button1.png" alt="자세히 보러가기">
+        </a>
+    </section>
+
+    <section class="section portfolio">
+        <img src="images/main3.png" alt="bg">
+
+        <a href="portfolio.html" class="btn btn-pink" target="_blank">
+            <img src="images/button2.png" alt="자세히 보러가기">
+        </a>
+    </section>
+
+        <footer>
+            <img src="images/main4.png" alt="개인정보">
+
+            <img src="images/shapes5.png" class="char shapes5">
+        </footer>
+
+</body>
+</html>
